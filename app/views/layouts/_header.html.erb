@@ -1,5 +1,5 @@
 <header class="navbar navbar-fixed-top">
-	<div class="navbar-inner">
+	<div class="navbar-inner" id="navbar">
 		<div class="container">
 			<button class="btn btn-navbar" data-target=".nav-collapse" 
 					data-toggle="collapse" type="button">
@@ -10,6 +10,10 @@
 			<%= link_to "[EthiKelLee]", root_path, id: "logo" %>
 			<div class="nav-collapse collapse">
 				<ul class="nav pull-right">
+				  <li class='active'><%= link_to 'Showcase',"#showcase"%></li>
+				  <li><%= link_to 'Workflow',"#workflow"%></li>
+				  <li><%= link_to 'About',"#who_are_they"%></li>
+          <li class="divider-vertical"></li>
 					<li><%= link_to "Home",				root_path %></li>
 					<li><%= link_to "Portfolio",			about_path %></li>
 					<li><%= link_to "Contact",			contact_path %></li>
