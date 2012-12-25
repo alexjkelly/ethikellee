@@ -10,10 +10,12 @@
 			<%= link_to "[EthiKelLee]", root_path, id: "logo" %>
 			<div class="nav-collapse collapse">
 				<ul class="nav pull-right">
-				  <li class='active'><%= link_to 'Showcase',"#showcase"%></li>
-				  <li><%= link_to 'Workflow',"#workflow"%></li>
-				  <li><%= link_to 'About',"#who_are_they"%></li>
-          <li class="divider-vertical"></li>
+				  <% if request.path_parameters[:controller] == 'static_pages' && request.path_parameters[:action] == 'home' %>
+  				  <li><%= link_to 'Showcase',"#showcase"%></li>
+  				  <li><%= link_to 'Workflow',"#workflow"%></li>
+  				  <li><%= link_to 'About',"#who_are_they"%></li>
+            <li class="divider-vertical"></li>
+          <% end %>
 					<li><%= link_to "Home",				root_path %></li>
 					<li><%= link_to "Portfolio",			about_path %></li>
 					<li><%= link_to "Contact",			contact_path %></li>
