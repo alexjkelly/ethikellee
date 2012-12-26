@@ -4,6 +4,7 @@ gem 'rails', '3.2.6'
 gem 'bootstrap-sass', '2.0.4.0'
 gem 'devise'
 gem 'turbolinks'
+gem 'bxslider-rails'
 
 
 # Bundle edge Rails instead:
