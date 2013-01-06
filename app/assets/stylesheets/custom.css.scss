@@ -232,7 +232,11 @@ p.date-label-text {
   box-shadow: 0 0 5px 5px #888;
   padding:20px;
   background-color: black;
-  min-height: 600px;
+  min-height: 350px;
+  
+  .showcase-title {
+    color: #FC3;
+  }
   
 }
 
