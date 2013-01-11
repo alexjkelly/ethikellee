@@ -1,12 +1,12 @@
 <%= render 'showcase'%>
-
 <div id='workflow' class='well'> 
-  <h2>Workflow goes here ...</h2>
+<h1>The KelLee Workflow</h1>
+  <ul class='bxslider'>
+    <li><%= image_tag 'kelly1.jpg', title: 'Workflow Step 1'%></li>
+    <li><%= image_tag 'kelly2.jpg', title: 'Workflow Step 2'%></li>
+  </ul>
 </div>
-<ul class='bxslider'>
-  <li><%= image_tag 'kelly1.jpg', title: 'Workflow Step 1'%></li>
-  <li><%= image_tag 'kelly2.jpg', title: 'Workflow Step 2'%></li>
-</ul>
+
 <%= render'about'%>
 
 <%= render 'whoarethey'%>
